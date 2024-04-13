@@ -4,10 +4,6 @@ CREATE EXTENSION postgis;
 
 BEGIN;
 
-CREATE TABLE urls (
-    id_urls BIGSERIAL PRIMARY KEY,
-    url TEXT UNIQUE
-);
 
 /*
  * Users may be partially hydrated with only a name/screen_name 
