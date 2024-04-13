@@ -7,6 +7,8 @@ echo 'load pg_denormalized'
 echo '================================================================================'
 # FIXME: implement this with GNU parallel
 
+time echo "$files" | parallel ./load_denormalized.sh
+
 echo '================================================================================'
 echo 'load pg_normalized'
 echo '================================================================================'
